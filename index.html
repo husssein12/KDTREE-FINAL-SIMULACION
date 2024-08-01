@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de KD-Tree</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KD-TREE</h1>
+        <div class="input-section">
+            <input type="text" id="pointInput" placeholder="Ingrese un punto (x, y)">
+            <button id="addPointBtn">Agregar Punto</button>
+            <button id="buildTreeBtn">  Sin-balanceo</button>
+            <button id="balanceTreeBtn">Auto-balancear</button>
+        </div>
+        <div id="pointList" class="panel"></div>
+    </div>
+    <div class="content">
+        <svg width="1400" height="800"></svg>
+    </div>
+    <script src="kd-tree.js"></script>
+</body>
+</html>
